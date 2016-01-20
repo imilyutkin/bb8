@@ -1,0 +1,127 @@
+.canvas {
+  position: relative;
+  height: 600px;
+  width: 800px;
+  margin: 100px auto;
+  background-color: #F5FAFC; }
+  .canvas .bb8 .body {
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    height: 220px;
+    width: 220px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #EBF2FA;
+    overflow: hidden;
+    border: 8px solid #244356; }
+    .canvas .bb8 .body .circle {
+      position: absolute;
+      height: 110px;
+      width: 110px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #FDC23E;
+      border: 8px solid #244356; }
+      .canvas .bb8 .body .circle::after {
+        content: '';
+        border: 8px solid #244356;
+        display: block;
+        height: 35%;
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        background-color: #EBF2FA;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+    .canvas .bb8 .body .circle1 {
+      top: -14px;
+      left: -24px; }
+    .canvas .bb8 .body .circle2 {
+      top: 131px;
+      left: 65px; }
+    .canvas .bb8 .body .circle3 {
+      height: 280px;
+      width: 280px;
+      top: -140px;
+      left: 140px; }
+    .canvas .bb8 .body .line {
+      position: absolute;
+      height: 8px;
+      width: 100px;
+      background: #244356; }
+    .canvas .bb8 .body .line1 {
+      top: 27px;
+      left: 95px;
+      -webkit-transform: rotate(-10deg);
+          -ms-transform: rotate(-10deg);
+              transform: rotate(-10deg);
+      width: 55px; }
+    .canvas .bb8 .body .line2 {
+      top: 127px;
+      left: 36px;
+      -webkit-transform: rotate(55deg);
+          -ms-transform: rotate(55deg);
+              transform: rotate(55deg);
+      width: 64px; }
+    .canvas .bb8 .body .line3 {
+      top: 130px;
+      left: 156px;
+      width: 50px;
+      -webkit-transform: rotate(120deg);
+          -ms-transform: rotate(120deg);
+              transform: rotate(120deg); }
+    .canvas .bb8 .body .dot {
+      position: absolute;
+      height: 17px;
+      width: 17px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: #244356; }
+    .canvas .bb8 .body .dot1 {
+      top: 84px;
+      left: 117px; }
+    .canvas .bb8 .body .dot2 {
+      top: 145px;
+      left: 24px; }
+  .canvas .bb8 .body-shadow-crop {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: solid 8px #244356;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    top: 230px;
+    left: 230px; }
+    .canvas .bb8 .body-shadow-crop .body-shadow {
+      width: 220px;
+      height: 220px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      position: absolute;
+      -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
+              box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
+      left: -50px;
+      top: -20px; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }

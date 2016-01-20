@@ -1,0 +1,119 @@
+$background: #F5FAFC
+$base: #EBF2FA
+$bodySize: 220px
+$stroke: #244356
+$orange: #FDC23E
+$blue: #449BAA
+$red: #FF7761
+
+.canvas
+  position: relative
+  height: 600px
+  width: 800px
+  margin: 100px auto
+  background-color: $background
+
+  .bb8
+    .body
+      position: absolute
+      top: 230px;
+      left: 230px;
+      height: $bodySize
+      width: $bodySize
+      border-radius: 50%
+      background-color: $base
+      overflow: hidden
+      border: 8px solid $stroke
+      // animation: spin 1.5s linear infinite
+
+      .circle
+        position: absolute
+        height: 110px
+        width: 110px
+        border-radius: 50%
+        background-color: $orange
+        border: 8px solid $stroke
+        &::after
+          content: ''
+          border: 8px solid $stroke
+          display: block
+          height: 35%
+          width: 35%
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          background-color: $base
+          border-radius: 50%
+      .circle1
+        top: -14px;
+        left: -24px;
+      .circle2
+        top: 131px
+        left: 65px
+      .circle3
+        height: 280px
+        width: 280px
+        top: -140px
+        left: 140px
+
+      .line
+        position: absolute
+        height: 8px
+        width: 100px
+        background: $stroke
+      .line1
+        top: 27px
+        left: 95px
+        transform: rotate(-10deg)
+        width: 55px
+      .line2
+        top: 127px
+        left: 36px
+        transform: rotate(55deg)
+        width: 64px
+      .line3
+        top: 130px;
+        left: 156px;
+        width: 50px;
+        transform: rotate(120deg);
+
+      .dot
+        position: absolute
+        height: 17px
+        width: 17px
+        border-radius: 50%
+        background: $stroke
+      .dot1
+        top: 84px
+        left: 117px
+      .dot2
+        top: 145px
+        left: 24px
+
+    .body-shadow-crop
+      width: 220px
+      height: 220px
+      position: absolute
+      border-radius: 50%
+      border: solid 8px $stroke
+      overflow: hidden
+      -webkit-transform: translate3d(0, 0, 0)
+      top: 230px;
+      left: 230px;
+      .body-shadow
+        width: 220px
+        height: 220px
+        border-radius: 50%
+        position: absolute
+        box-shadow: 0px 0px 60px rgba(0,0,0,0.4)
+        left: -50px
+        top: -20px
+
+
+
+@keyframes spin
+  0%
+    transform: rotate(360deg)
+  100%
+    transform: rotate(0deg)
